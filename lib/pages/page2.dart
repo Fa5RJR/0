@@ -98,7 +98,7 @@ class GetStartedPage extends StatelessWidget {
               Text(
                 'Where ability begins again'.tr(),
                 textAlign: TextAlign.center,
-                style: const TextStyle(
+                style:  TextStyle(
                   fontStyle: FontStyle.italic,
                   fontSize: 22,
                   color: Colors.black,
@@ -109,18 +109,18 @@ class GetStartedPage extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              ElevatedButton(
-                onPressed: () => Navigator.pushNamed(context, "/get_started"),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.teal,
-                  padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 18),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
+             ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, "/home"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.teal,
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 18),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
                 ),
+              ),
                 child: Text(
                   'Get Started'.tr(),
-                  style: const TextStyle(fontSize: 20, color: Colors.white),
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
             ],
@@ -137,4 +137,5 @@ class GetStartedPage extends StatelessWidget {
       ),
     );
   }
+
 }
