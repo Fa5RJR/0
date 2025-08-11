@@ -70,13 +70,13 @@ class MyApp extends StatelessWidget {
           localizationsDelegates: context.localizationDelegates,
           supportedLocales: context.supportedLocales,
           locale: context.locale,
-          initialRoute: '/',
+         initialRoute: '/',
           routes: {
-            '/': (context) =>  SplashScreen(),
-            '/get_started': (context) => const HomePage(),
-            '/signup': (context) => const Signup(),
+          '/':       (context) =>  SplashScreen(),
+          '/home': (context) => const HomePage(),
+          '/signup': (context) => const Signup(),
             '/signin': (context) => const LoginScreen(),
-            '/home': (context) => const HomeScreen(),
+            '/Sign in': (context) =>  HomeScreen(),
           },
         );
       },
